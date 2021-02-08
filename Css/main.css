@@ -1,0 +1,12 @@
+body{
+  background:#999;
+  font-family: sans-serif;
+}
+h1, h2{
+  font-family: fantasy;
+  font-size: 200%;
+  color:#41f2f2;
+}
+a{
+  color:#f700ff;
+}
