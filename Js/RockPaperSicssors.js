@@ -13,6 +13,7 @@ var ai_play;
 var ran;
 var ai_and_user_input;
 var result;
+var textResut = document.getElementById("result");;
 
 user_input();
 function ai_plays(){
@@ -39,7 +40,6 @@ function user_input(){
 function game(user_played){
   ai_play = ai_plays();
   ai_and_user_input = ai_play+user_played;
-  console.log(ai_and_user_input);
   switch(ai_and_user_input){
     case "rs":
     case "pr":
@@ -62,12 +62,15 @@ function game(user_played){
     if (result == "ai"){
       ai_score += 1;
       ai_score_display.innerHTML = ai_score;
-      console.log("ai");
+      textResut.innerHTML = "You Lose";
     }
 
     else if (result == "user"){
       user_score += 1;
       user_score_display.innerHTML = user_score;
-      console.log("user");
+      textResut.innerHTML = "You Win";
+    }
+    else{
+      textResut.innerHTML = "Draw";
     }
 }
