@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>HangMan</title>
+    <link href="Css/HangMan.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <body>
+    <header>
+      <h1>HangMan</h1>
+    </header>
+
+    <input type="text" class="hangManGuessClass" id="HangManGuess" onfocus="this.value=''" value="guess here">
+    <button onClick="EnterGuess()" class="hangManGuessClass">Enter</button>
+    <button onClick="restartGame()" class="hangManGuessClass" id="restartGame">NewGame</button>
+
+    <div id="wordElements"></div>
+    <div id="winLose"></div>
+    <div id="WrongLetters"></div>
+    <img id="hangManImg">
+
+    <div class="dropDown">
+      <img src="Images/menuDownArrow.png" class="dropDownButton" width="70px" height="70px"></img>
+      <div class="dropDownContent">
+        <a href="index.html">Home</a>
+        <a href="#">page2</a>
+        <a href="Rock-Paper-Sicssors.html">Rock-Paper-Sicssors</a>
+      </div>
+    </div>
+
+    <script src="Js/HangMan.js"></script>
+  </body>
+</html>

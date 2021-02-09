@@ -5,7 +5,7 @@
 }
 
 header{
-  font-family: arial;
+  font-family: sans-serif;
   font-size: 25px;
   text-align: center;
   color: #0c206b;
@@ -15,7 +15,7 @@ h1{
   padding: 25px;
 }
 #result{
-  font-family: arial;
+  font-family: sans-serif;
   font-size: 100px;
   color: white;
   text-align: center;
