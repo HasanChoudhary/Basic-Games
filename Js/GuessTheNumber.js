@@ -35,7 +35,7 @@ function Lose(){
 function HigherOrLower(guess){
   temp = "";
   guess = parseInt(guess);
-  if(guess == ranNum){
+  if(guess <= ranNum+5 && guess >= ranNum-5){
     Win();
     guesses = 5;
   }
@@ -54,6 +54,7 @@ function HigherOrLower(guess){
       guesses++;
       setTimeout(() => {  EnterGuess(); }, 500);
     }
+
   }
   displayGuessedValues.innerHTML = GuessedValues;
 }
